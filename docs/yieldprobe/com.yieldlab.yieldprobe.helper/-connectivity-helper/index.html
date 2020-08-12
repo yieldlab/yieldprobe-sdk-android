@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>ConnectivityHelper - yieldprobe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../index.html">com.yieldlab.yieldprobe.helper</a>&nbsp;/&nbsp;<a href="./index.html">ConnectivityHelper</a><br/>
+<br/>
+<h1>ConnectivityHelper</h1>
+<code><span class="keyword">class </span><span class="identifier">ConnectivityHelper</span></code>
+<p>Helper class to check connection status amd read out connection type.
+This code was taken from old sevenonemedia SDK.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Helper class to check connection status amd read out connection type.
+This code was taken from old sevenonemedia SDK.</p>
+<code><span class="identifier">ConnectivityHelper</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-c-e-l-l-u-l-a-r_-n-e-t-w-o-r-k_2-g.html">CELLULAR_NETWORK_2G</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CELLULAR_NETWORK_2G</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-e-l-l-u-l-a-r_-n-e-t-w-o-r-k_3-g.html">CELLULAR_NETWORK_3G</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CELLULAR_NETWORK_3G</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-e-l-l-u-l-a-r_-n-e-t-w-o-r-k_4-g.html">CELLULAR_NETWORK_4G</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CELLULAR_NETWORK_4G</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-c-e-l-l-u-l-a-r_-n-e-t-w-o-r-k_-u-n-k-n-o-w-n_-g-e-n-e-r-a-t-i-o-n.html">CELLULAR_NETWORK_UNKNOWN_GENERATION</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">CELLULAR_NETWORK_UNKNOWN_GENERATION</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-t-h-e-r-n-e-t.html">ETHERNET</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">ETHERNET</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-n-k-n-o-w-n.html">UNKNOWN</a></h4>
+</td>
+<td>
+<p>Connection types defined in API spec.</p>
+<code><span class="keyword">val </span><span class="identifier">UNKNOWN</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-w-i-f-i.html">WIFI</a></h4>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">WIFI</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-connection-type.html">getConnectionType</a></h4>
+</td>
+<td>
+<p>Check type of connection.</p>
+<code><span class="keyword">fun </span><span class="identifier">getConnectionType</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.ConnectivityHelper$getConnectionType(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-connected.html">isConnected</a></h4>
+</td>
+<td>
+<p>Check is device is connected.</p>
+<code><span class="keyword">fun </span><span class="identifier">isConnected</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.ConnectivityHelper$isConnected(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

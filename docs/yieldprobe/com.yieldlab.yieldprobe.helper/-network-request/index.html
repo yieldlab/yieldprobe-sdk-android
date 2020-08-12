@@ -1,0 +1,84 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>NetworkRequest - yieldprobe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../index.html">com.yieldlab.yieldprobe.helper</a>&nbsp;/&nbsp;<a href="./index.html">NetworkRequest</a><br/>
+<br/>
+<h1>NetworkRequest</h1>
+<code><span class="keyword">class </span><span class="identifier">NetworkRequest</span></code>
+<p>Class to hold all data for one network request.
+Can not be implemented as data class.
+Future variable can not be referenced on lower API levels (!)</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>default constructor used in unit tests.</p>
+<code><span class="identifier">NetworkRequest</span><span class="symbol">(</span><span class="symbol">)</span></code>
+<p>constructor for requests with EventBus.</p>
+<code><span class="identifier">NetworkRequest</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.NetworkRequest$<init>(kotlin.collections.Set((kotlin.Int)))/adslotIds">adslotIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span></code>
+<p>constructor for request with Futures.</p>
+<code><span class="identifier">NetworkRequest</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.NetworkRequest$<init>(kotlin.collections.Set((kotlin.Int)), java.util.concurrent.CompletableFuture((com.yieldlab.yieldprobe.data.Bid)), java.util.concurrent.CompletableFuture((java.util.HashMap((kotlin.Int, com.yieldlab.yieldprobe.data.Bid)))))/adslotIds">adslotIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.helper.NetworkRequest$<init>(kotlin.collections.Set((kotlin.Int)), java.util.concurrent.CompletableFuture((com.yieldlab.yieldprobe.data.Bid)), java.util.concurrent.CompletableFuture((java.util.HashMap((kotlin.Int, com.yieldlab.yieldprobe.data.Bid)))))/futureBid">futureBid</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.helper.NetworkRequest$<init>(kotlin.collections.Set((kotlin.Int)), java.util.concurrent.CompletableFuture((com.yieldlab.yieldprobe.data.Bid)), java.util.concurrent.CompletableFuture((java.util.HashMap((kotlin.Int, com.yieldlab.yieldprobe.data.Bid)))))/futureBids">futureBids</span><span class="symbol">:</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="m-adslot-ids.html">mAdslotIds</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mAdslotIds</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-future-bid.html">mFutureBid</a></h4>
+</td>
+<td>
+<p>Do not reference these variables on low API levels (!).</p>
+<code><span class="keyword">var </span><span class="identifier">mFutureBid</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-future-bids.html">mFutureBids</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mFutureBids</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-id.html">mId</a></h4>
+</td>
+<td>
+<p>Identifier for the request. Not used right now.
+Could be used to remove request from queue.</p>
+<code><span class="keyword">var </span><span class="identifier">mId</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-u-r-l.html">mURL</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mURL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-use-futures.html">mUseFutures</a></h4>
+</td>
+<td>
+<p>If this variable is unset EventBus will be used. Otherwise Futures.</p>
+<code><span class="keyword">var </span><span class="identifier">mUseFutures</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

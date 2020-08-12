@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>IDFAHelper.IDFATask - yieldprobe</title>
+<link rel="stylesheet" href="../../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../../index.html">com.yieldlab.yieldprobe.helper</a>&nbsp;/&nbsp;<a href="../index.html">IDFAHelper</a>&nbsp;/&nbsp;<a href="./index.html">IDFATask</a><br/>
+<br/>
+<h1>IDFATask</h1>
+<code><span class="keyword">class </span><span class="identifier">IDFATask</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/os/AsyncTask.html"><span class="identifier">AsyncTask</span></a><span class="symbol">&lt;</span><a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">,</span>&nbsp;<a href="https://docs.oracle.com/javase/6/docs/api/java/lang/Void.html"><span class="identifier">Void</span></a><span class="symbol">,</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span></code>
+<p>IDFA must not be read on UI-Thread. Using an AsyncTask.
+Task will send an event over EventBus with IDFA string.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>IDFA must not be read on UI-Thread. Using an AsyncTask.
+Task will send an event over EventBus with IDFA string.</p>
+<code><span class="identifier">IDFATask</span><span class="symbol">(</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="do-in-background.html">doInBackground</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">doInBackground</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="com.yieldlab.yieldprobe.helper.IDFAHelper.IDFATask$doInBackground(kotlin.Array((android.content.Context)))/params">params</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-post-execute.html">onPostExecute</a></h4>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onPostExecute</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.IDFAHelper.IDFATask$onPostExecute(kotlin.String)/result">result</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

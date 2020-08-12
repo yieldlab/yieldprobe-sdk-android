@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Common - yieldprobe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../index.html">com.yieldlab.yieldprobe</a>&nbsp;/&nbsp;<a href="./index.html">Common</a><br/>
+<br/>
+<h1>Common</h1>
+<code><span class="keyword">object </span><span class="identifier">Common</span></code>
+<p>Object to hold common data for the SDK. Not all variables and functions are used right now.
+Still left in code.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-b-a-s-e_-u-r-l.html">BASE_URL</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">BASE_URL</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-b-i-d_-e-x-p-i-r-e_-i-n_-s-e-c-o-n-d-s.html">BID_EXPIRE_IN_SECONDS</a></h4>
+</td>
+<td>
+<p>Bid expires after five minutes. This timeout is set in the Yieldlab backend.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">BID_EXPIRE_IN_SECONDS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-e-n-a-b-l-e_-l-o-g-g-i-n-g.html">ENABLE_LOGGING</a></h4>
+</td>
+<td>
+<p>Feature toggle for logging</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">ENABLE_LOGGING</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-m-a-x_-a-d-s-l-o-t-s.html">MAX_ADSLOTS</a></h4>
+</td>
+<td>
+<p>Yieldlab API can only process a maximum of ten adslots.</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">MAX_ADSLOTS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-m-i-n_-a-p-i_-l-e-v-e-l_-f-o-r_-f-u-t-u-r-e_-c-a-l-l-s.html">MIN_API_LEVEL_FOR_FUTURE_CALLS</a></h4>
+</td>
+<td>
+<p>API level required to use CompletableFutures</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">MIN_API_LEVEL_FOR_FUTURE_CALLS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-m-i-n_-d-i-a-g-o-n-a-l_-f-o-r_-t-a-b-l-e-t_-i-n_-i-n-c-h-e-s.html">MIN_DIAGONAL_FOR_TABLET_IN_INCHES</a></h4>
+</td>
+<td>
+<p>Tablet is above 7.0 inches</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">MIN_DIAGONAL_FOR_TABLET_IN_INCHES</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html"><span class="identifier">Double</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-s-d-k_-v-e-r-s-i-o-n.html">SDK_VERSION</a></h4>
+</td>
+<td>
+<p>SDK version for URL</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">SDK_VERSION</span><span class="symbol">: </span><span class="identifier">&lt;ERROR CLASS&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-t-a-g_-l-o-g.html">TAG_LOG</a></h4>
+</td>
+<td>
+<p>Tag for logging messages</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">TAG_LOG</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-r-l_-h-a-r-d_-c-o-d-e-d.html">URL_HARD_CODED</a></h4>
+</td>
+<td>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">URL_HARD_CODED</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-u-r-l_-s-t-a-r-t.html">URL_START</a></h4>
+</td>
+<td>
+<p>Base URL for HTTP GET request</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">URL_START</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-w-a-i-t_-t-i-m-e_-f-o-r_-n-e-w_-l-o-c-a-t-i-o-n_-b-e-f-o-r-e_-p-r-o-c-e-e-d_-i-n_-m-s.html">WAIT_TIME_FOR_NEW_LOCATION_BEFORE_PROCEED_IN_MS</a></h4>
+</td>
+<td>
+<p>Constant to configure location mode</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">WAIT_TIME_FOR_NEW_LOCATION_BEFORE_PROCEED_IN_MS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="generate-time-stamp.html">generateTimeStamp</a></h4>
+</td>
+<td>
+<p>Generate to millis timestamp.</p>
+<code><span class="keyword">fun </span><span class="identifier">generateTimeStamp</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-package-name.html">getPackageName</a></h4>
+</td>
+<td>
+<p>Get the package name.</p>
+<code><span class="keyword">fun </span><span class="identifier">getPackageName</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Common$getPackageName(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-store-u-r-l.html">getStoreURL</a></h4>
+</td>
+<td>
+<p>Get the store URL name</p>
+<code><span class="keyword">fun </span><span class="identifier">getStoreURL</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Common$getStoreURL(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="-s-d-k-log.html">SDKLog</a></h4>
+</td>
+<td>
+<p>Log function</p>
+<code><span class="keyword">fun </span><span class="identifier">SDKLog</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Common$SDKLog(kotlin.String)/msg">msg</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

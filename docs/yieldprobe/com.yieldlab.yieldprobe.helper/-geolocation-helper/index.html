@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GeolocationHelper - yieldprobe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../index.html">com.yieldlab.yieldprobe.helper</a>&nbsp;/&nbsp;<a href="./index.html">GeolocationHelper</a><br/>
+<br/>
+<h1>GeolocationHelper</h1>
+<code><span class="keyword">class </span><span class="identifier">GeolocationHelper</span></code>
+<p>Helper class to get a geolocation.
+Uses a fast and lightweight implementation to get the location over the FusedLocationProviderClient API.</p>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-init-.html">&lt;init&gt;</a></h4>
+</td>
+<td>
+<p>Helper class to get a geolocation.
+Uses a fast and lightweight implementation to get the location over the FusedLocationProviderClient API.</p>
+<code><span class="identifier">GeolocationHelper</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.helper.GeolocationHelper$<init>(android.content.Context)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="m-fused-location.html">mFusedLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mFusedLocation</span><span class="symbol">: </span><span class="identifier">FusedLocationProviderClient</span><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-location.html">mLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mLocation</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/location/Location.html"><span class="identifier">Location</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="m-use-dummy-location.html">mUseDummyLocation</a></h4>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">mUseDummyLocation</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="get-location.html">getLocation</a></h4>
+</td>
+<td>
+<p>Just return the last stored location. This call is cheap and fast.</p>
+<code><span class="keyword">fun </span><span class="identifier">getLocation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://developer.android.com/reference/android/location/Location.html"><span class="identifier">Location</span></a><span class="symbol">?</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="update-location.html">updateLocation</a></h4>
+</td>
+<td>
+<p>Update location with last known location. Function does not have a return statement.
+Will send an event over EventBus with new location.</p>
+<code><span class="keyword">fun </span><span class="identifier">updateLocation</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

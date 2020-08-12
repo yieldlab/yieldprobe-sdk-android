@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>alltypes - yieldprobe</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<h3>All Types</h3>
+<table>
+<tbody>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.data/-bid/index.html">com.yieldlab.yieldprobe.data.Bid</a></h5>
+<p>Data class to hold one bid entry.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.data/-bid-json-parameter/index.html">com.yieldlab.yieldprobe.data.BidJsonParameter</a></h5>
+<p>Object with JSON identifier namings. Only the id field is parsed explicitly.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe/-common/index.html">com.yieldlab.yieldprobe.Common</a></h5>
+<p>Object to hold common data for the SDK. Not all variables and functions are used right now.
+Still left in code.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.data/-configuration/index.html">com.yieldlab.yieldprobe.data.Configuration</a></h5>
+<p>Data class to hold the SDK configuration.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-connectivity-helper/index.html">com.yieldlab.yieldprobe.helper.ConnectivityHelper</a></h5>
+<p>Helper class to check connection status amd read out connection type.
+This code was taken from old sevenonemedia SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-consent-helper/index.html">com.yieldlab.yieldprobe.helper.ConsentHelper</a></h5>
+<p>Read out the Consent string.
+The class uses the proposed identifiers: "IABConsent_CMPPresent" and "IABConsent_ConsentString"</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-device-helper/index.html">com.yieldlab.yieldprobe.helper.DeviceHelper</a></h5>
+<p>Get the device type. Identifier encoding is taken from Yieldlab API spec.
+Please note:</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.data/-device-meta-data/index.html">com.yieldlab.yieldprobe.data.DeviceMetaData</a></h5>
+<p>Data class to hold device meta data.
+Non valid entries are encoded as null values.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.events/-event-geolocation/index.html">com.yieldlab.yieldprobe.events.EventGeolocation</a></h5>
+<p>Event to update Geolocation inside the SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.events/-event-i-d-f-a/index.html">com.yieldlab.yieldprobe.events.EventIDFA</a></h5>
+<p>Event to update IDFA inside the SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.events/-event-probe-failure/index.html">com.yieldlab.yieldprobe.events.EventProbeFailure</a></h5>
+<p>Event to update notify user about a probe request failure.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.events/-event-probe-log/index.html">com.yieldlab.yieldprobe.events.EventProbeLog</a></h5>
+<p>Event to update notify user about a log event.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.events/-event-probe-success/index.html">com.yieldlab.yieldprobe.events.EventProbeSuccess</a></h5>
+<p>Event to update notify user about a probe request success.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-low-a-p-i-level/index.html">com.yieldlab.yieldprobe.exception.ExceptionLowAPILevel</a></h5>
+<p>Exception for too low API level for using the SDK function.
+Used if CompletableFutures are not supported.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-max-ad-slots/index.html">com.yieldlab.yieldprobe.exception.ExceptionMaxAdSlots</a></h5>
+<p>Exception for too many adslots provided to API.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-min-ad-slots/index.html">com.yieldlab.yieldprobe.exception.ExceptionMinAdSlots</a></h5>
+<p>Exception for too few adslots provided to API.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-network/index.html">com.yieldlab.yieldprobe.exception.ExceptionNetwork</a></h5>
+<p>Exception for network error events.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-network-response-parsing/index.html">com.yieldlab.yieldprobe.exception.ExceptionNetworkResponseParsing</a></h5>
+<p>Exception for error while parsing response body.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-no-google-play-services/index.html">com.yieldlab.yieldprobe.exception.ExceptionNoGooglePlayServices</a></h5>
+<p>Exception for no Google Play Services available.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-s-d-k-already-initialized/index.html">com.yieldlab.yieldprobe.exception.ExceptionSDKAlreadyInitialized</a></h5>
+<p>Exception for SDK already initialized.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-s-d-k-not-initialized/index.html">com.yieldlab.yieldprobe.exception.ExceptionSDKNotInitialized</a></h5>
+<p>Exception for SDK not initialized.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.exception/-exception-yieldprobe/index.html">com.yieldlab.yieldprobe.exception.ExceptionYieldprobe</a></h5>
+<p>Base class for all Exception thrown by SDK.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-geolocation-helper/index.html">com.yieldlab.yieldprobe.helper.GeolocationHelper</a></h5>
+<p>Helper class to get a geolocation.
+Uses a fast and lightweight implementation to get the location over the FusedLocationProviderClient API.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-i-d-f-a-helper/index.html">com.yieldlab.yieldprobe.helper.IDFAHelper</a></h5>
+<p>Helper class to read out out the IDFA from Google. Also known as Google Advertiser ID.
+Using this library: com.google.android.gms:play-services-ads-identifier:17.0.0</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-network-request/index.html">com.yieldlab.yieldprobe.helper.NetworkRequest</a></h5>
+<p>Class to hold all data for one network request.
+Can not be implemented as data class.
+Future variable can not be referenced on lower API levels (!)</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-network-request-helper/index.html">com.yieldlab.yieldprobe.helper.NetworkRequestHelper</a></h5>
+<p>Does the HTTP GET request to the backend.
+Uses EventBus to communicate back to the SDK user</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.helper/-u-r-l-builder-helper/index.html">com.yieldlab.yieldprobe.helper.URLBuilderHelper</a></h5>
+<p>Helper class to build an URL.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe/-yieldprobe/index.html">com.yieldlab.yieldprobe.Yieldprobe</a></h5>
+<p>Yieldprobe is implemented as singleton. Using Kotlin language object feature.
+All methods are annotated with @JvmStatic so they are easy callable from Java.</p>
+</tr>
+<tr>
+<h5><a href="../com.yieldlab.yieldprobe.data/-yieldprobe-u-r-l-parameter/index.html">com.yieldlab.yieldprobe.data.YieldprobeURLParameter</a></h5>
+<p>Object to hold all URL parameters. Will be references in URLBuilderHelper.
+Parameter taken from document "YLSE-011019-0910-34.pdf".</p>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

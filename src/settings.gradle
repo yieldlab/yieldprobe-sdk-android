@@ -1,0 +1,2 @@
+include ':app', ':yieldprobe'
+rootProject.name='Yieldprobe SDK and Sample Application'

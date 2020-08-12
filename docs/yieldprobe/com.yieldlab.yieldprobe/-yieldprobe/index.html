@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Yieldprobe - yieldprobe</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">yieldprobe</a>&nbsp;/&nbsp;<a href="../index.html">com.yieldlab.yieldprobe</a>&nbsp;/&nbsp;<a href="./index.html">Yieldprobe</a><br/>
+<br/>
+<h1>Yieldprobe</h1>
+<code><span class="keyword">object </span><span class="identifier">Yieldprobe</span></code>
+<p>Yieldprobe is implemented as singleton. Using Kotlin language object feature.
+All methods are annotated with @JvmStatic so they are easy callable from Java.</p>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="-d-e-f-a-u-l-t_-h-t-t-p_-c-o-n-n-e-c-t-i-o-n_-t-i-m-e-o-u-t_-i-n_-m-s.html">DEFAULT_HTTP_CONNECTION_TIMEOUT_IN_MS</a></h4>
+</td>
+<td>
+<p>Default HTTP connection timeout</p>
+<code><span class="keyword">const</span> <span class="keyword">val </span><span class="identifier">DEFAULT_HTTP_CONNECTION_TIMEOUT_IN_MS</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html"><span class="identifier">Long</span></a></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<h4><a href="configure.html">configure</a></h4>
+</td>
+<td>
+<p>Sets a new configuration.</p>
+<code><span class="keyword">fun </span><span class="identifier">configure</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$configure(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$configure(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/activity">activity</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$configure(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.data/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-configuration.html">getConfiguration</a></h4>
+</td>
+<td>
+<p>Gets the current SDK configuration.</p>
+<code><span class="keyword">fun </span><span class="identifier">getConfiguration</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.yieldlab.yieldprobe.data/-configuration/index.html"><span class="identifier">Configuration</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-device-meta-data.html">getDeviceMetaData</a></h4>
+</td>
+<td>
+<p>Gets the current device meta data.</p>
+<code><span class="keyword">fun </span><span class="identifier">getDeviceMetaData</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.yieldlab.yieldprobe.data/-device-meta-data/index.html"><span class="identifier">DeviceMetaData</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-version.html">getVersion</a></h4>
+</td>
+<td>
+<p>Get SDK version. Can be called without initializing SDK before.</p>
+<code><span class="keyword">fun </span><span class="identifier">getVersion</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="get-version-name.html">getVersionName</a></h4>
+</td>
+<td>
+<p>Get version name (e.g. "1.0.0"). Can be called without initializing SDK before.</p>
+<code><span class="keyword">fun </span><span class="identifier">getVersionName</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="initialize.html">initialize</a></h4>
+</td>
+<td>
+<p>Initializes the SDK. Has to be called once for the lifetime of the application.</p>
+<code><span class="keyword">fun </span><span class="identifier">initialize</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$initialize(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/context">context</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/content/Context.html"><span class="identifier">Context</span></a><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$initialize(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/activity">activity</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$initialize(android.content.Context, android.app.Activity, com.yieldlab.yieldprobe.data.Configuration)/configuration">configuration</span><span class="symbol">:</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.data/-configuration/index.html"><span class="identifier">Configuration</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-google-play-services-available.html">isGooglePlayServicesAvailable</a></h4>
+</td>
+<td>
+<p>Checking if Google Player Service is available.
+This call also can be done with SDK not initialized.</p>
+<code><span class="keyword">fun </span><span class="identifier">isGooglePlayServicesAvailable</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$isGooglePlayServicesAvailable(android.app.Activity, kotlin.Boolean)/activity">activity</span><span class="symbol">:</span>&nbsp;<a href="https://developer.android.com/reference/android/app/Activity.html"><span class="identifier">Activity</span></a><span class="symbol">, </span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$isGooglePlayServicesAvailable(android.app.Activity, kotlin.Boolean)/showPopup">showPopup</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="is-initialized.html">isInitialized</a></h4>
+</td>
+<td>
+<p>Check the SDK initialize status.</p>
+<code><span class="keyword">fun </span><span class="identifier">isInitialized</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html"><span class="identifier">Boolean</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="on-message-event.html">onMessageEvent</a></h4>
+</td>
+<td>
+<p>EventBus function for EventIDFA.</p>
+<code><span class="keyword">fun </span><span class="identifier">onMessageEvent</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$onMessageEvent(com.yieldlab.yieldprobe.events.EventIDFA)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.events/-event-i-d-f-a/index.html"><span class="identifier">EventIDFA</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>EventBus function for EventGeolocation.</p>
+<code><span class="keyword">fun </span><span class="identifier">onMessageEvent</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$onMessageEvent(com.yieldlab.yieldprobe.events.EventGeolocation)/event">event</span><span class="symbol">:</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.events/-event-geolocation/index.html"><span class="identifier">EventGeolocation</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="probe.html">probe</a></h4>
+</td>
+<td>
+<p>Call the backend for one adslot.</p>
+<code><span class="keyword">fun </span><span class="identifier">probe</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$probe(kotlin.Int)/adslotId">adslotId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span></code>
+<p>Call the backend for multiple adslot.</p>
+<code><span class="keyword">fun </span><span class="identifier">probe</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$probe(kotlin.collections.Set((kotlin.Int)))/adslotIds">adslotIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://docs.oracle.com/javase/6/docs/api/java/util/concurrent/CompletableFuture.html"><span class="identifier">CompletableFuture</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-hash-map/index.html"><span class="identifier">HashMap</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">,</span>&nbsp;<a href="../../com.yieldlab.yieldprobe.data/-bid/index.html"><span class="identifier">Bid</span></a><span class="symbol">&gt;</span><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<h4><a href="probe-with-events.html">probeWithEvents</a></h4>
+</td>
+<td>
+<p>Call the backend for one adslot.</p>
+<code><span class="keyword">fun </span><span class="identifier">probeWithEvents</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$probeWithEvents(kotlin.Int)/adslotId">adslotId</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Call the backend for multiple adslot.</p>
+<code><span class="keyword">fun </span><span class="identifier">probeWithEvents</span><span class="symbol">(</span><span class="identifier" id="com.yieldlab.yieldprobe.Yieldprobe$probeWithEvents(kotlin.collections.Set((kotlin.Int)))/adslotIds">adslotIds</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-set/index.html"><span class="identifier">Set</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

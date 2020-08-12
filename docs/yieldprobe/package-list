@@ -1,0 +1,8 @@
+$dokka.format:html
+$dokka.linkExtension:html
+
+com.yieldlab.yieldprobe
+com.yieldlab.yieldprobe.data
+com.yieldlab.yieldprobe.events
+com.yieldlab.yieldprobe.exception
+com.yieldlab.yieldprobe.helper
