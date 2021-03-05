@@ -5,7 +5,7 @@ import android.preference.PreferenceManager
 
 /**
  * Read out the Consent string.
- * The class uses the proposed identifiers: "IABTCF_CmpSdkID" and "IABTCF_TCString"
+ * The class uses the proposed identifier: "IABTCF_TCString"
  */
 class ConsentHelper {
 
@@ -16,15 +16,7 @@ class ConsentHelper {
      * @return Consent string
      */
     fun getString(context: Context): String? {
-
         val mPreferences = PreferenceManager.getDefaultSharedPreferences(context)
-        val consentString = mPreferences.getString("IABTCF_TCString", "")
-        val cmpPresent = mPreferences.getInt("IABTCF_CmpSdkID", 0)
-
-        if (cmpPresent > 0) {
-            return consentString
-        } else {
-            return null
-        }
+        return mPreferences.getString("IABTCF_TCString", null)
     }
 }
